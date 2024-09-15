@@ -1,4 +1,5 @@
 import requests
+import re
 
 from typing import *
 from fake_useragent import FakeUserAgent
@@ -25,7 +26,7 @@ def parse_data(url, init_date, final_date) -> Dict:
     result_json = response.json()
     result_dict = {}
     for result in result_json:
-        numbers = [num.strip() for num in result['combinacion'].split('-')][:5]
+        numbers = re.findall(r'\d{2}', result['combinacion'].split(' C(')[0])
         for i in range(len(numbers)):
             numbers[i] = int(numbers[i])
         result_dict[result['fecha_sorteo'][:10]] = numbers
@@ -37,7 +38,6 @@ def create_matrix(result_dict: Dict) -> List:
     matrix = []
     for val in result_dict.values():
         matrix.append(val)
-
     return matrix
 
 
