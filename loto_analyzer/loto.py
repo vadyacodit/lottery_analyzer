@@ -14,6 +14,7 @@ class Loto:
         self.data = get_data(self.url, self.init_date, self.final_date)
         self.lucky_numbers = self.get_lucky_numbers()
         self.matrix = self.get_matrix()
+        self.transposed_matrix = self.get_transposed_matrix()
 
 # Возвращает матрицу, состоящую из удачных чисел за этот день
     def get_lucky_numbers(self) -> List[List]:
@@ -23,7 +24,7 @@ class Loto:
 
         return self.lucky_numbers
 
-#Возвращает готовую для анализа матрицу
+# Возвращает готовую для анализа матрицу
     def get_matrix(self):
         self.matrix = []
         period = len(self.data)
@@ -31,14 +32,30 @@ class Loto:
             zeroes_list = [0] * 49
             for num in self.lucky_numbers[index]:
                 for j in range(len(zeroes_list)):
-                    if (j+1) == num:
+                    if (j + 1) == num:
                         zeroes_list[j] += 1
             self.matrix.append(zeroes_list)
+
         return self.matrix
 
-    def days_until_next_hit(self):
-        self.matrix = np.array(self.matrix).T
-        print(self.show_data())
+# Возвращает готовую для анализа матрицу, сортировка по числам
+    def get_transposed_matrix(self):
+        self.transposed_matrix = []
+        period = len(self.lucky_numbers)
+        for numbers_coord in range(49):
+            zeroes_list = [0] * period
+            for day in range(period):
+                if (numbers_coord + 1) in self.lucky_numbers[day]:
+                    zeroes_list[day] = 1
+            self.transposed_matrix.append(zeroes_list)
+
+        return self.transposed_matrix
+
+
+
+
+
+
 
 
 # Печатает матрицу построчно с нумерацией

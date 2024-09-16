@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f2d4c384-a9eb-4d30-b6aa-76ce8575b142" name="Changes" comment="Added parser class">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/lottery_analyzer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/loto.py" afterDir="false" />
+    <list default="true" id="f2d4c384-a9eb-4d30-b6aa-76ce8575b142" name="Changes" comment="Removed unnecessary Loto class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loto_analyzer/loto.py" beforeDir="false" afterPath="$PROJECT_DIR$/loto_analyzer/loto.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/parser.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,15 +45,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.loto.executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.parser.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.loto.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.matrix.executor&quot;: &quot;Run&quot;,
+    &quot;Python.parser.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\PycharmProjects\lottery_analyzer\loto_analyzer" />
+      <recent name="C:\Users\user\PycharmProjects\lottery_analyzer" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -84,11 +85,56 @@
       <option name="project" value="LOCAL" />
       <updated>1726426831112</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Removed unnecessary classes, combined in 1 file">
+      <option name="closed" value="true" />
+      <created>1726431482505</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1726431482505</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed issue with 1 missing number in list">
+      <option name="closed" value="true" />
+      <created>1726431954673</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726431954673</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Created separate classes for matrix and loto">
+      <option name="closed" value="true" />
+      <created>1726444007183</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726444007183</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Added method to display final matrix">
+      <option name="closed" value="true" />
+      <created>1726497545757</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726497545757</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Removed unnecessary Loto class">
+      <option name="closed" value="true" />
+      <created>1726505258742</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726505258742</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added parser class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added parser class" />
+    <MESSAGE value="Removed unnecessary classes, combined in 1 file" />
+    <MESSAGE value="Fixed issue with 1 missing number in list" />
+    <MESSAGE value="Created separate classes for matrix and loto" />
+    <MESSAGE value="Added method to display final matrix" />
+    <MESSAGE value="Removed unnecessary Loto class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed unnecessary Loto class" />
   </component>
 </project>
