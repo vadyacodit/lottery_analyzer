@@ -1,7 +1,4 @@
-from typing import *
-from fake_useragent import FakeUserAgent
-from loto import Loto
-
+from loto_analyzer.loto import Loto
 
 
 link = 'https://www.loteriasyapuestas.es/es/resultados/bonoloto'
