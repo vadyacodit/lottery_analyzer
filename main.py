@@ -1,4 +1,3 @@
-from loto_analyzer.matrix import Matrix
 from loto_analyzer.loto import Loto
 
 

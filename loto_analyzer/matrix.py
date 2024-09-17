@@ -1,7 +1,5 @@
-import numpy as np
-
 from typing import *
-from loto_analyzer.utils.data_parser import get_data
+
 
 
 
